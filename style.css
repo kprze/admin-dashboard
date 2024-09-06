@@ -7,12 +7,19 @@
     display: grid;
     grid-template-columns: 1fr 4fr;
     grid-template-rows: 1fr 4fr;
+    height: 100vh;
   }
 
   .icon {
     background-color: black;
-    width: 16px;
-    height: 16px;
+    box-sizing: border-box;
+    width: 24px;
+    height: 24px;
+  }
+
+  .branding .icon {
+    width: 32px;
+    height: 32px;
   }
 
   .header {
@@ -47,13 +54,15 @@
   }
 
   .sidebar-content {
-    align-items: center;
-    margin: 24px 36px;
+    margin: 28px 38px;
   }
 
   .branding {
     font-size: 32px;
     margin: 15px 0;
+    display: flex;
+    align-items: center;
+    gap: 10px;
   }
 
   .navigation {
@@ -63,10 +72,13 @@
 
   .navigation p {
     font-size: 21px;
+    align-self: center;
   }
 
   .navigation div {
-    padding: 4px;
+    display: flex;
+    gap: 10px;
+    margin-bottom: 8px;
   }
 
   .content {
@@ -94,7 +106,6 @@
   }
 
   .projects .card {
-    height: 200px;
     min-width: 250px;
     background-color: brown;
     border-radius: .5em;
