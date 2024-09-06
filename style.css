@@ -208,15 +208,30 @@
   }
 
   .annoucements {
-    padding: 34px;
+    padding: 22px 34px;
+    display: grid;
   }
 
   .annoucements p {
+    font-size: 14px;
     display: -webkit-box;
-    -webkit-line-clamp: 4; /* number of lines to show */
+    -webkit-line-clamp: 3; /* number of lines to show */
             line-clamp: 2; 
     -webkit-box-orient: vertical;
     overflow: hidden;
+    margin-bottom: 12px;
+  }
+
+  .annoucements h4 {
+    margin-bottom: 4px;
+    margin-top: 12px;
+  }
+
+  .annoucement2 {
+    border-color: black;
+    border-bottom: solid;
+    border-top: solid;
+    border-width: 1px;
   }
 
 
