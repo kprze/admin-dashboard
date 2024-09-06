@@ -49,11 +49,17 @@
     display: grid;
     grid-column: 2/3;
     grid-template-columns: 3fr 1fr;
+    padding: 15px 0;
+  }
+
+  .content h1 {
+    padding-bottom: 10px;
   }
 
   .projects {
     display: grid;
     padding: 15px;
+    grid-template-rows: auto 1fr;
   }
 
   .project-content {
@@ -66,21 +72,23 @@
     height: 200px;
     min-width: 250px;
     background-color: brown;
+    border-radius: .5em;
   }
   
   .card p {
-    padding: 5px;
+    padding: 15px;
   }
 
   .news {
     display: grid;
     padding: 15px;
     grid-template-columns: 1fr;
-    grid-auto-rows: 1fr 8fr 1fr 8fr;
+    grid-template-rows: repeat(2 ,auto 1fr);
   } 
 
   .annoucements, .trending {
     background-color: blue;
+    border-radius: .5em;
   }
 
   .annoucements {
