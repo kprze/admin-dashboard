@@ -234,5 +234,11 @@
     border-width: 1px;
   }
 
+  .trending {
+    align-items: center;
+    padding: 20px;
+    grid-template-columns: 1fr 2fr;
+    font-size: 14px;
+  }
 
   
