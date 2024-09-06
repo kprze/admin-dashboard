@@ -172,10 +172,20 @@
     min-width: 250px;
     background-color: brown;
     border-radius: .5em;
+    display: grid;
   }
-  
+
+  .project-icons {
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    gap: 16px;
+    margin-bottom: 22px;
+    margin-right: 22px;
+  }
+
   .card p {
-    padding: 15px;
+    padding: 22px;
   }
 
   .news {
