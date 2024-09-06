@@ -35,9 +35,11 @@
     grid-template-columns: 2fr 1fr;
   }
 
-  .bottom-header {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+  .search-container {
+    align-self: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
   .searchbar {
@@ -45,7 +47,29 @@
     border-radius: 1em;
     height: 50px;
     width: 75%;
-    align-self: center;
+    margin-left: 18px;
+  }
+
+  .notifications {
+    margin: 0 24px;
+  }
+
+  .user {
+    display: flex;
+    align-items: center;
+  }
+
+  .user-icon {
+    background-color: azure;
+    height: 52px;
+    width: 52px;
+    border-radius: 50%;
+    margin: 0 16px;
+  }
+
+  .bottom-header {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
   }
 
   .sidebar {
@@ -132,3 +156,5 @@
   .annoucements {
     grid-row: 2/3;
   }
+
+  
