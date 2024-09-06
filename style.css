@@ -3,61 +3,67 @@
     padding: 0;
   }
 
-
-  .container{
-    text-align: center;
+  .container {
     display: grid;
-    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: 1fr 4fr;
   }
 
   .header {
-    background-color: #a1a1a1;
-    grid-column: 2/4;
-  }
-
-  .searchbar {
-    background-color: #00acfc;
-    height: 6rem;
-  }
-
-  .profile {
-    height: 6rem;
-  }
-
-  .logo {
-    align-self: center;
-    justify-self: left;
+    background-color: red;
+    height: 100%;
+    grid-column: 2/3;
+    display: grid;
   }
 
   .sidebar {
-    background-color: #00acfc;
-    grid-row: 1/4;
-    display: grid;
-    gap: 15px;
+    background-color: blue;
+    grid-row: 1/3;
+    display: flex;
   }
 
-  .sidebar div {
-    display: grid;
-    gap: 10px;
+  .sidebar-content {
+    align-items: center;
+    margin: 24px 36px;
   }
 
-  .sidebar button {
-    background: none;
-    border-style: dashed;
-    color: #ffffff;
-    font-weight: bold;
-    text-align: left;
+  .branding {
+    font-size: 32px;
+    margin: 15px 0;
+  }
+
+  .navigation {
+    display: grid;
+    margin: 28px 0;
+  }
+
+  .navigation p {
+    font-size: 21px;
+  }
+
+  .navigation div {
+    padding: 4px;
+  }
+
+  .content {
+    background-color: yellow;
+    display: grid;
+    grid-column: 2/3;
+    grid-template-columns: 3fr 1fr;
   }
 
   .projects {
-    grid-column: 2/3;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-    gap: 30px;
+    gap: 15px;
+    padding: 15px;
   }
 
-  .projects div{
-    background-color: aqua;
-    height: 12rem;
+  .projects .card {
+    height: 180px;
+    background-color: brown;
   }
-
+  
+  .card p {
+    padding: 5px;
+  }
