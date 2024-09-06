@@ -28,6 +28,7 @@
     grid-column: 2/3;
     display: grid;
     grid-template-rows: 1fr 1fr;
+    padding: 16px 0;
   }
 
   .top-header {
@@ -180,12 +181,14 @@
     align-items: center;
     justify-content: right;
     gap: 16px;
-    margin-bottom: 22px;
-    margin-right: 22px;
+  }
+
+  .card {
+    padding: 22px;
   }
 
   .card p {
-    padding: 22px;
+    margin: 12px 0;
   }
 
   .news {
