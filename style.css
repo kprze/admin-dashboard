@@ -96,6 +96,22 @@
     gap: 6px;
   }
 
+  .user-actions{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+    margin-right: 15px;
+  }
+
+  .user-actions div {
+    background-color: blue;
+    padding: 10px 20px;
+    min-width: 4em;
+    text-align: center;
+    border-radius: 1em;
+  }
+
   .sidebar {
     background-color: blue;
     grid-row: 1/3;
